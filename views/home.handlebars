@@ -1,0 +1,62 @@
+       <div class="container-fluid">
+            <div class="jumbotron jumbotron-fluid" id="banner">
+                <div class="container" id ="head">
+                <h1 class="display-4" id="title">Thanatophobia</h1>
+                <p class="lead" id="subtitle">The greatest tech blog in the whole entire universe.</p>
+                </div>
+            </div>
+
+            <div id="cardContainer">
+                
+                <div class="row">
+                    <div class="container-fluid">
+
+                        <div class = "col-3">
+                            
+                            <div class="card" style="width: 18rem" id="logincard">
+                                <div class="card-body">
+                                    
+                                    <h4 class="card-title">Log Into Your Account</h5>
+                                    <h5 class="card-title">Email:</p>
+                                    <input type="text" id="email">
+                                    <p class="card-text"></p>
+                                    <h5 class="card-title">Password:</p>
+                                    <input type="text" id="password">
+                                    <p class="card-text"></p>
+                                    <p class="card-text"><a href="forgotpass.html">Forget your email?</a></p>
+                                    
+                                    <div class = "card-footer">
+                                        <button id="login" class="btn">Log In</button>
+                                        <button id="createaccount" class="btn">Create Account</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "col-3">
+                            <div class="card" style="width: 18rem" id="navcard">
+                                <div class="card-body">
+                                    
+                                    <img class="card-img-top" src="aeon.jpg" alt="Card image cap">
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class = "col-8">
+                    <div class="card" id="contentarea">
+                        <h1 id="contenttitle">Latest Posts:</h1>
+                        {{#each posts}}
+                            <div>
+                                <h4>{{post_title}}</h4>
+                                <p>{{post_contents}}</p>
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+                
+            </div>
+        </div><!--closes container-fluid-->
